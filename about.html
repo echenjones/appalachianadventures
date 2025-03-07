@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appalachian Adventures | About Us</title>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For hamburger and social media icons -->
+        <style type="text/css">
+            .about {
+                padding: 20px 20% 50px 20%;
+                text-align: justify;
+                line-height: 2;
+            }
+            .team {
+                padding: 20px 20% 20px 20%;
+                line-height: 2;
+            }
+            .team p {
+                text-align: justify;
+            }
+            .about h1, .team h2 {
+                padding-bottom: 20px;
+                text-align: center;
+                line-height: 1.2;
+            }
+            .team-member {
+                padding-bottom: 40px
+            }
+            .team h3 {
+                padding-bottom: 10px;
+                color: #47411F;
+            }
+            .team img {
+                float:left;
+                width: 200px;
+                height: 200px;
+                margin-right:20px;
+                border-radius:10px;
+            }
+
+            body {
+                background-color: #E9DBD2;
+            }
+
+            @media (max-width: 600px) {
+                .about, .team {
+                    padding: 20px 50px 20px 50px;
+                }
+                .team img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            @media (max-width: 375px) {
+                .team img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        </style>
+
+        <script>
+            function toggle() {
+                var menu = document.getElementById("menu");
+                var top = document.getElementById("top");
+                if (menu.className === "menu") {
+                    menu.className += " responsive";
+                    top.className += " responsive";
+                }
+                else {
+                    menu.className = "menu";
+                    top.className = "top";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="top" id="top">
+            <!-- Secondary navigation bar -->
+            <div class="secondary-navigation">
+                <div style="min-width: 10px;"></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
+                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
+                    </ul>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            <!-- Navigation bar -->
+            <div class="header">
+                <div style="min-width: 10px;"></div>
+                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
+                <div></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger"> <!-- Hamburger menu -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                            <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            
+            <!-- Expandable menu -->
+            <div class="menu" id="menu">
+                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
+            </div>
+        </div>
+
+        <!-- Space under navigation bar -->
+        <div class="blank-space"></div>
+
+        <img style="margin: 0px" src="mountains3.jpg" alt="Appalachian Mountains" width=100%>
+
+        <div class="about">
+            <h1>About Appalachian Adventures</h1>
+            <p>
+                Appalachian Adventures is a premier outdoor tour company dedicated to showcasing the breathtaking beauty of the Appalachian Mountains. 
+                With a focus on providing unforgettable experiences, we offer a range of guided tours that cater to adventurers of all skill levels. 
+                From invigorating day hikes that explore stunning vistas and hidden trails to immersive week-long hikes that include camping under the 
+                stars, Appalachian Adventures ensures that every participant connects deeply with the natural environment. Our knowledgeable guides 
+                bring a wealth of experience and a passion for the outdoors, enhancing the journey with insights into the region's rich history and 
+                diverse ecology.
+            </p>
+            <br>
+            <p>
+                For those seeking a more immersive experience, Appalachian Adventures also offers week-long hiking trips that combine camping and 
+                canoeing. This unique blend allows participants to explore the tranquil waterways of the Appalachians while also trekking through its 
+                majestic mountains. Campfires, shared stories, and the camaraderie of fellow adventurers create lasting memories. Each trip is 
+                meticulously planned to provide a balance of challenge and enjoyment, making it ideal for families, friends, or solo travelers looking 
+                to bond with nature and each other.
+            </p>
+            <br>
+            <p>
+                Safety and sustainability are at the heart of Appalachian Adventures’ mission. We emphasize environmentally responsible practices, 
+                ensuring that the natural beauty of the Appalachians is preserved for future generations. By limiting group sizes and following Leave 
+                No Trace principles, we provide an intimate experience while minimizing impact on the delicate ecosystems. Whether you’re a seasoned 
+                hiker or a first-time explorer, Appalachian Adventures invites you to step into the wild and discover the enchanting allure of the 
+                Appalachian Mountains.
+            </p>
+        </div>
+
+        <!-- Meet the Team Section -->
+        <div class="team">
+            <h2>Meet the Team</h2>
+
+            <div class="team-member">
+                <img src="elana.jpg" alt="Elana - Founder & Lead Guide" width="200" height="200" style="float:left; margin-right:20px; border-radius:10px;">
+                <h3>Elana - Founder & Lead Guide</h3>
+                <p>
+                    Elana has been exploring the Appalachian Mountains for over 20 years. With a deep love for nature and a wealth of experience in 
+                    outdoor survival, Elana founded Appalachian Adventures to share her passion with others. She leads many of the immersive week-long 
+                    hikes, offering insights into the history, flora, and fauna of the region.
+                </p>
+                <div style="clear:both;"></div> <!-- Clear floats -->
+            </div>
+
+            <div class="team-member">
+                <img src="brooke.jpg" alt="Brooke - Operations Manager" width="200" height="200" style="float:left; margin-right:20px; border-radius:10px;">
+                <h3>Brooke - Operations Manager</h3>
+                <p>
+                    Brooke oversees the day-to-day operations at Appalachian Adventures. With a background in event management and logistics, Brooke 
+                    ensures that each tour runs smoothly and that every participant has a memorable experience. Her organizational skills keep the 
+                    company thriving.
+                </p>
+                <div style="clear:both;"></div> <!-- Clear floats -->
+            </div>
+
+            <div class="team-member">
+                <img src="eamonn.jpg" alt="Eamonn - Marketing Director" width="200" height="200" style="float:left; margin-right:20px; border-radius:10px;">
+                <h3>Eamonn - Marketing Director</h3>
+                <p>
+                    Eamonn is responsible for connecting Appalachian Adventures with its audience. He crafts engaging marketing campaigns and manages 
+                    the company’s social media presence. Eamonn’s love for storytelling helps bring the adventure to life for those planning their 
+                    next trip.
+                </p>
+                <div style="clear:both;"></div> <!-- Clear floats -->
+            </div>
+
+            <div class="team-member">
+                <img src="nate.jpg" alt="Nate - Senior Guide" width="200" height="200" style="float:left; margin-right:20px; border-radius:10px;">
+                <h3>Nate - Senior Guide</h3>
+                <p>
+                    Nate is one of the senior guides at Appalachian Adventures. With extensive knowledge of the Appalachian trails and a background 
+                    in environmental science, Nate provides educational and engaging experiences on every hike. His enthusiasm and expertise make 
+                    each journey unforgettable.
+                </p>
+                <div style="clear:both;"></div> <!-- Clear floats -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-organizer">
+                <div style="flex-grow: 1">
+                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
+                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
+                </div>
+
+                <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
+                <div>
+                    <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
+                    <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
+                    <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
+                    <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <p>&copy; Appalachian Adventures 2024</p>
+        </div>
+    </body>
+</html>

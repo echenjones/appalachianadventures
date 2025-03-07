@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appalachian Adventures | Hiking Essentials</title>
+            <link rel="icon" type="image/x-icon" href="icon.png">
+            <link rel="stylesheet" href="style.css"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For hamburger and social media icons -->
+            <style type="text/css">
+                .post {
+                    padding: 20px 20% 20px 20%;
+                }
+                .post h1 {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    text-align: center;
+                    line-height: 1.2;
+                }
+                .post img {
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                }
+                .post h2 {
+                    padding: 30px 0 10px 0;
+                    color: #593B02;
+                    text-align: center;
+                }
+                .post h3 {
+                    padding-bottom: 10px;
+                    color: #47411F;
+                }
+                .post p {
+                    margin-bottom: 20px;
+                    line-height: 1.8;
+                }
+
+                body {
+                    background-color: #E9DBD2;
+                }
+
+                @media (max-width: 600px) {
+                    .post {
+                        padding: 20px 50px 20px 50px;
+                    }
+                }
+            </style>
+
+            <script>
+                function toggle() {
+                    var menu = document.getElementById("menu");
+                    var top = document.getElementById("top");
+                    if (menu.className === "menu") {
+                        menu.className += " responsive";
+                        top.className += " responsive";
+                    }
+                    else {
+                        menu.className = "menu";
+                        top.className = "top";
+                    }
+                }
+            </script>
+        </head>
+
+        <body>
+            <div class="top" id="top">
+                <!-- Secondary navigation bar -->
+                <div class="secondary-navigation">
+                    <div style="min-width: 10px;"></div>
+                    <div class="navbar">
+                        <ul>
+                            <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
+                            <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
+                        </ul>
+                    </div>
+                    <div style="min-width: 10px"></div>
+                </div>
+                <!-- Navigation bar -->
+                <div class="header">
+                    <div style="min-width: 10px;"></div>
+                    <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
+                    <div></div>
+                    <div class="navbar">
+                        <ul>
+                            <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
+                            <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
+                            <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
+                            <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger"> <!-- Hamburger menu -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                                <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <div style="min-width: 10px"></div>
+                </div>
+                
+                <!-- Expandable menu -->
+                <div class="menu" id="menu">
+                    <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
+                    <br>
+                    <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
+                    <br>
+                    <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
+                    <br>
+                    <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
+                    <br>
+                    <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
+                    <br>
+                    <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
+                </div>
+            </div>
+
+            <!-- Space under navigation bar -->
+            <div class="blank-space"></div>
+
+            <div class="post">
+                <h1>Hiking Essentials for Your Next Adventure</h1>
+
+                <img src="equipment.jpg" alt="Hiking Gear" width="100%">
+
+                <p style="text-align: center">
+                    Planning your next hike on the Appalachian Trail? Whether you’re a beginner or an experienced hiker, having the right gear can make 
+                    or break your adventure. Here are some essential items to pack for a safe and enjoyable hike.
+                </p>
+
+                <h2>Proper Footwear</h2>
+                <h3>Hiking Boots</h3>
+                <p>
+                    Investing in quality hiking boots is crucial. Look for boots that offer ankle support, waterproofing, and good traction. Your feet 
+                    will thank you on rough and muddy trails!
+                </p>
+
+                <h2>Backpack and Hydration</h2>
+                <h3>Hiking Backpack</h3>
+                <p>
+                    Choose a backpack that fits comfortably and has enough capacity for all your essentials. Make sure to include a hydration system or 
+                    water bottles, and aim to carry at least 2 liters of water on any hike.
+                </p>
+
+                <h2>Navigation Tools</h2>
+                <h3>Map and Compass</h3>
+                <p>
+                    Even if you’re familiar with the trail, it’s important to carry a map and compass. Consider using a GPS device or a navigation app 
+                    on your phone, but remember to have a traditional backup in case of dead batteries or no signal.
+                </p>
+
+                <h2>Weather-Appropriate Clothing</h2>
+                <h3>Weather-Appropriate Clothing</h3>
+                <p>
+                    Layering is key to staying comfortable on the trail. Start with a moisture-wicking base layer, followed by an insulating mid-layer, 
+                    and top it off with a waterproof jacket. Don’t forget your hat and gloves if you’re hiking in cooler weather.
+                </p>
+
+                <h2>Emergency Kit and First Aid</h2>
+                <h3>First Aid Kit</h3>
+                <p>
+                    Always pack a small emergency kit with essential items like a first-aid kit, whistle, multi-tool, and matches. It’s better to be 
+                    prepared for any situation that might arise.
+                </p>
+
+                <h2>Nutrition and Snacks</h2>
+                <h3>Trail Snacks</h3>
+                <p>Pack enough snacks to keep your energy up throughout the hike. High-protein snacks like nuts, trail mix, energy bars, and dried fruits 
+                    are great options. Always carry a little extra, just in case your hike takes longer than planned.
+                </p>
+
+                <h2>Sun Protection</h2>
+                <h3>Sun Protection Gear</h3>
+                <p>
+                    The Appalachian Trail offers plenty of open, sunny sections. Protect yourself with sunscreen, a wide-brimmed hat, and sunglasses to 
+                    avoid sunburn and fatigue.
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-organizer">
+                    <div style="flex-grow: 1">
+                        <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
+                        <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
+                    </div>
+
+                    <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
+                    <div>
+                        <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
+                        <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
+                        <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
+                        <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
+                    </div>
+                </div>
+                <p>&copy; Appalachian Adventures 2024</p>
+            </div>
+    </body>
+</html>

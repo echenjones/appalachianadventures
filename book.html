@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appalachian Adventures | Hike Booking Form</title>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For social media icons -->
+        <style>
+            body {
+                background-image: url('leaves.jpg'); /* Replace with the correct path or URL */
+                background-size: cover; /* Ensure the image covers the entire background */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Prevent tiling */
+            }
+            .blank-space {
+                margin-top: 190px; /* Override typical 140px space under navigation bar */
+            }
+            .form-container {
+                max-width: 500px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                background-color: rgba(255, 255, 255, 0.95); /* Mostly white with slight transparency */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .form-container h1 {
+                text-align: center;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .form-group input, .form-group select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            .form-group input[type="submit"] {
+                background-color: #F2AB27;
+                color: white;
+                cursor: pointer;
+                border: none;
+            }
+            .form-group input[type="submit"]:hover {
+                background-color: #D59622;
+            }
+            .thank-you-message {
+                display: none;
+                text-align: center;
+            }
+
+            @media (max-width: 1125px) {
+                .blank-space {
+                    margin-top: 90px; /* Override typical 70px space under navigation bar */
+                }
+            }
+        </style>
+
+        <script>
+            function toggle() {
+                var menu = document.getElementById("menu");
+                var top = document.getElementById("top");
+                if (menu.className === "menu") {
+                    menu.className += " responsive";
+                    top.className += " responsive";
+                }
+                else {
+                    menu.className = "menu";
+                    top.className = "top";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="top" id="top">
+            <!-- Secondary navigation bar -->
+            <div class="secondary-navigation">
+                <div style="min-width: 10px;"></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
+                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
+                    </ul>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            <!-- Navigation bar -->
+            <div class="header">
+                <div style="min-width: 10px;"></div>
+                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
+                <div></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger"> <!-- Hamburger menu -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                            <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            
+            <!-- Expandable menu -->
+            <div class="menu" id="menu">
+                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
+            </div>
+        </div>
+
+        <!-- Space under navigation bar -->
+        <div class="blank-space"></div>
+        
+        <div class="form-container" id="formContainer">
+            <h1>Hike Booking Form</h1>
+            <form id="bookingForm">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </div>
+
+                <!-- Phone Number Field -->
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="^\d{10}$" required placeholder="1234567890">
+                    <small style="color: #A6583C;">Phone number must be 10 digits (no dashes).</small>
+                </div>
+
+                <!-- Date Field -->
+                <div class="form-group">
+                    <label for="date">Date for Booking:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <!-- Hike Type Field -->
+                <div class="form-group">
+                    <label for="hikeType">Type of Hike:</label>
+                    <select id="hikeType" name="hikeType" required>
+                        <option value="">--Select Hike Type--</option>
+                        <option value="day-hike">Day Hike</option>
+                        <option value="week-long-hike">Week-Long Hike with Camping</option>
+                        <option value="canoe-and-camp-hike">Canoe and Camp Hike</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <!-- Thank You Message -->
+        <div class="thank-you-message" id="thankYouMessage">
+            <h1>Thank You!</h1>
+            <p>Thank you for booking a hike with us. Please check your email for confirmation and next steps.</p>
+        </div>
+
+        <script>
+            document.getElementById('bookingForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                let phoneInput = document.getElementById('phone').value;
+                if (!/^\d{10}$/.test(phoneInput)) {
+                    alert("Please enter a valid 10-digit phone number.");
+                    return;
+                }
+
+                // Hide form and show thank you message
+                document.getElementById('formContainer').style.display = 'none';
+                document.getElementById('thankYouMessage').style.display = 'block';
+            });
+        </script>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-organizer">
+                <div style="flex-grow: 1">
+                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
+                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
+                </div>
+                
+                <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
+                <div>
+                    <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
+                    <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
+                    <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
+                    <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <p>&copy; Appalachian Adventures 2024</p>
+        </div>
+    </body>
+</html>

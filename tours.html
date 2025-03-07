@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appalachian Adventures | Tours</title>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For social media icons -->
+        <style>
+            body {
+                background-color: #E9DBD2;
+            }
+            .description {
+                text-align: justify;
+                margin-bottom: 5px;
+            }
+            .tourImage {
+                border-radius: 10px;
+            }
+            .trips {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto;
+                column-gap: 30px;
+                row-gap: 10px;
+                justify-items: center;
+                align-items: center;
+                padding: 20px 15% 30px 15%;
+                max-width: 1300px;
+                line-height: 1.8;
+            }
+            .trips h2 {
+                text-align: center;
+            }
+            #bottom.tourImage {
+                display: none;
+            }
+
+            @media (max-width: 1000px) {
+                .trips {
+                    grid-template-columns: auto;
+                    grid-template-rows: auto auto auto auto auto auto;
+                }
+                #left.tourImage {
+                    display: none;
+                }
+                #bottom.tourImage {
+                    display: block;
+                }
+                #day {
+                    margin-bottom: 10px;
+                }
+                #week {
+                    margin-bottom: 10px;
+                    margin-top: 40px;
+                }
+                #canoe {
+                    margin-bottom: 10px;
+                    margin-top: 40px;
+                }
+            }
+            @media (max-width: 600px) {
+                .trips {
+                    padding: 20px 50px 20px 50px;
+                }
+            }
+        </style>
+
+        <script>
+            function toggle() {
+                var menu = document.getElementById("menu");
+                var top = document.getElementById("top");
+                if (menu.className === "menu") {
+                    menu.className += " responsive";
+                    top.className += " responsive";
+                }
+                else {
+                    menu.className = "menu";
+                    top.className = "top";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="top" id="top">
+            <!-- Secondary navigation bar -->
+            <div class="secondary-navigation">
+                <div style="min-width: 10px;"></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
+                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
+                    </ul>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            <!-- Navigation bar -->
+            <div class="header">
+                <div style="min-width: 10px;"></div>
+                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
+                <div></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger"> <!-- Hamburger menu -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                            <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            
+            <!-- Expandable menu -->
+            <div class="menu" id="menu">
+                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
+            </div>
+        </div>
+
+        <!-- Space under navigation bar -->
+        <div class="blank-space"></div>
+
+        <h1 style="text-align: center; padding-top: 35px;">Explore Our Tours!</h1>
+
+        <!-- Where all info is located -->
+        <div class="trips">
+            <div id="day"></div>
+            <img class="tourImage" src="tour1.jpg" alt="Picture of tour" width="90%"> 
+            <img class="tourImage" id="left" src="tour0.jpg" alt="Picture of tour" width="90%">
+            <div id="week"></div>
+            <img class="tourImage" id="bottom" src="tour0.jpg" alt="Picture of tour" width="90%">
+            <div id="canoe"></div>
+            <img class="tourImage" src="tour2.jpg" alt="Picture of tour" width="90%">
+        </div>
+        
+        <script language="javascript">
+
+            // The information on all tours
+            const tours = [
+                {
+                    'Name' : 'Day Hikes',
+                    'Description' : 'Want a quick getaway from your busy schedule? Then our day hikes are perfect for you! Take a guided excursion with us through the breathtaking scenes and views of the Appalachian trails. You will get to learn all about the natural wildlife by our experienced guides. Each hike is carefully mapped out to provide a wonderful experience in just a few hours, no matter your skill level.',
+                    'Level' : 'All Skill Levels',
+                    'Duration' : '2-10 hour hikes',
+                    'includes' : [
+                        'Guided tour',
+                        'Food and drinks for the longer day hikes',
+                        'Beautiful scenery'
+                    ]
+                },
+                {
+                    'Name' : 'Week-Long Hike and Camping',
+                    'Description' : 'Are you a more experienced hiker, and want a more immersive experience? This is for you! These multi-day expeditions are perfect for someone wanting to get away from the craziness of everyday life and experience the beauty in the world. Each night, we set up camp at picturesque locations and cook delicious meals over the fire. You will leave with unforgettable memories and newfound wilderness skills.',
+                    'Level' : 'Intermediate to Advanced Hikers',
+                    'Duration' : '7 days',
+                    'includes' : [
+                        'Guided tour',
+                        'Food and drinks for all meals',
+                        'Hiking equipment (let us know if you need some before we go)',
+                        'Beautiful scenery'
+                    ]
+                },
+                {
+                    'Name' : 'Canoe and Camp Hike',
+                    'Description' : 'For those seeking a unique and exhilarating journey, our Canoe and Camp Hike offers the best of both worlds. Spend your days paddling through rivers and lakes and hiking trails to views you can not get anywhere else. Each evening, we set up camp by the water, where you can unwind with the soothing sounds of the wilderness around you. This tour is designed for those who love both water and land, giving you a fresh new experience you will remember forever.',
+                    'Level' : 'Intermediate to Advanced Hikers and Canoers',
+                    'Duration' : '4-7 days',
+                    'includes' : [
+                        'Guided tour',
+                        'Food and drinks for all meals',
+                        'Hiking equipment (let us know if you need some before we go)',
+                        'Canoeing equipment',
+                        'Beautiful scenery'
+                    ]
+                }
+            ]
+
+            //putting Day Hikes into html
+            document.getElementById("day").innerHTML += '<div>' + 
+                '<h2>' + tours[0].Name + '</h2>' + 
+                '<div class="description">' + tours[0].Description + '</div>' + '<ul>' + 
+                '<li>' + "Level: "+ tours[0].Level + '</li>' + 
+                '<li>' + "Duration: "+ tours[0].Duration + '</li>' + '</ul>' + "Includes:" +
+                '<ul">';
+            tours[0].includes.forEach(writeDay);
+            document.getElementById("day").innerHTML += '</ul>' + '</div>';
+
+            // called to write the Included information
+            function writeDay(item) {
+                document.getElementById("day").innerHTML += '<li>' + item + '</li>';
+            }
+
+            //putting Week-Long Hike and Camping into html
+            document.getElementById("week").innerHTML += '<div>' + 
+                '<h2>' + tours[1].Name + '</h2>' + 
+                '<div class="description">' + tours[1].Description + '</div>' + '<ul>' + 
+                '<li>' + "Level: "+ tours[1].Level + '</li>' + 
+                '<li>' + "Duration: "+ tours[1].Duration + '</li>' + '</ul>' + "Includes:" +
+                '<ul">';
+            tours[1].includes.forEach(writeWeek);
+            document.getElementById("week").innerHTML += '</ul>' + '</div>';
+
+            // called to write the Included information
+            function writeWeek(item) {
+                document.getElementById("week").innerHTML += '<li>' + item + '</li>';
+            }
+
+            //putting Canoe and Camp Hike into html
+            document.getElementById("canoe").innerHTML += '<div>' + 
+                '<h2>' + tours[2].Name + '</h2>' + 
+                '<div class="description">' + tours[2].Description + '</div>' + '<ul>' + 
+                '<li>' + "Level: "+ tours[2].Level + '</li>' + 
+                '<li>' + "Duration: "+ tours[2].Duration + '</li>' + '</ul>' + "Includes:" +
+                '<ul">';
+            tours[2].includes.forEach(writeCanoe);
+            document.getElementById("canoe").innerHTML += '</ul>' + '</div>';
+
+            // called to write the Included information
+            function writeCanoe(item) {
+                document.getElementById("canoe").innerHTML += '<li>' + item + '</li>';
+            }
+
+        </script>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-organizer">
+                <div style="flex-grow: 1">
+                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
+                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
+                </div>
+                
+                <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
+                <div>
+                    <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
+                    <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
+                    <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
+                    <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <p>&copy; Appalachian Adventures 2024</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appalachian Adventures | Contact</title>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For social media icons -->
+        <style>
+            body {
+                background-color: #E9DBD2;
+            }
+            .contacts {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 900px;
+                padding: 20px 10%;
+                line-height: 1.6;
+            }
+            .contacts h1{
+                padding-top: 10px;
+                text-align: center;
+            }
+            .info {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                border: 3px solid #593B02;
+                padding: 20px 0;
+            }
+            .info ul {
+                list-style-type: disc;
+                margin-bottom: 10px;
+                padding: 0;
+                color: #47411F;
+            }
+            .info li {
+                padding: 5px;
+                font-size: large;
+                list-style-type: none;
+            }
+            .info li a, .social-media a {
+                font-size: large;
+                color: #593B02;
+                text-decoration: none;
+            }
+            .info li a:hover, .social-media a:hover {
+                color: #47411F;
+            }
+            .map {
+                width: 100%;
+                padding-top: 20px;
+                text-align: center;
+            }
+            .social-media {
+                text-align: center;
+                padding-top: 20px;
+            }
+        </style>
+
+        <script>
+            function toggle() {
+                var menu = document.getElementById("menu");
+                var top = document.getElementById("top");
+                if (menu.className === "menu") {
+                    menu.className += " responsive";
+                    top.className += " responsive";
+                }
+                else {
+                    menu.className = "menu";
+                    top.className = "top";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="top" id="top">
+            <!-- Secondary navigation bar -->
+            <div class="secondary-navigation">
+                <div style="min-width: 10px;"></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
+                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
+                    </ul>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            <!-- Navigation bar -->
+            <div class="header">
+                <div style="min-width: 10px;"></div>
+                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
+                <div></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger"> <!-- Hamburger menu -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                            <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            
+            <!-- Expandable menu -->
+            <div class="menu" id="menu">
+                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
+            </div>
+        </div>
+
+        <!-- Space under navigation bar -->
+        <div class="blank-space"></div>
+
+        <div class="contacts">
+            
+            <h1>Contact Us</h1>
+        
+            <div style="max-width: 850px; margin: 20px 0; text-align: center;">
+                <p>Let us know if you have any questions or concerns about our tours, trips, or just want to learn more about the natural wildlife on the trail by contacting us though email, call, or any of our social media pages! </p>
+            </div>
+
+            <div class="info">
+
+                <div style="width: 20%"></div>
+
+                <div style="width: 80%">
+                    <ul>
+                        <li><strong>Email: </strong><a href="mailto:contact@appalachian-adventures.com">contact@appalachian-adventures.com</a></li>
+                        <li><strong>Phone: </strong><a href="tel:6175551111">617-555-1111</a></li>
+                        <li><strong>Address: </strong>
+                            <a href="https://www.google.com/maps/place/Appalachian+Trail+at+Boardman+St/@42.144203,-73.352853,7z/data=!4m6!3m5!1s0x89e7648a1ead5ec5:0xf04fc909385b82f0!8m2!3d42.1442025!4d-73.3528535!16s%2Fg%2F11g03nny8x?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer;"> 
+                            Appalachian Trail at Boardman St</a>
+                        </li>
+                    </ul>
+                    <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046457.199637968!2d-77.86975393749994!3d41.784009799555925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7648a1ead5ec5%3A0xf04fc909385b82f0!2sAppalachian%20Trail%20at%20Boardman%20St!5e0!3m2!1sen!2sus!4v1730070434728!5m2!1sen!2sus" width="100%" height="400px"; style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <p style="padding-top: 10px;">We look forward to speaking with you.</p>
+                    </div>
+                    
+                    <div class="social-media">
+                        <a href='https://www.instagram.com/' class="fa fa-instagram"></a> &emsp;
+                        <a href='https://www.facebook.com/' class="fa fa-facebook"></a>&emsp;
+                        <a href='https://www.twitter.com/' class="fa fa-twitter"></a>&emsp;
+                        <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
+                    </div>
+                </div>
+
+                <div style="width: 20%"></div>
+                
+            </div>
+
+        </div>
+
+        <script language="javascript">
+        </script>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-organizer">
+                <div style="flex-grow: 1">
+                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
+                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
+                </div>
+                
+                <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
+                <div>
+                    <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
+                    <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
+                    <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
+                    <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <p>&copy; Appalachian Adventures 2024</p>
+        </div>
+    </body>
+</html>

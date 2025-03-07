@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appalachian Adventures | FAQ</title>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For social media icons -->
+        <style>
+            body {
+                background-color: #E9DBD2;
+            }
+            .faq {
+                padding: 20px 20% 20px 20%;
+                text-align: justify;
+                line-height: 2;
+            }
+            .faq h1 {
+                padding-top: 20px;
+                padding-bottom: 30px;
+                text-align: center;
+                line-height: 1.2;
+            }
+            .faq h2 {
+                line-height: 1.2;
+            }
+            ul {
+                list-style-type: disc;
+                margin-bottom: 10px;
+                color: #47411F;
+            }
+
+            @media (max-width: 600px) {
+                .faq {
+                    padding: 20px 50px 20px 50px;
+                    text-align: left;
+                }
+            }
+        </style>
+
+        <script>
+            function toggle() {
+                var menu = document.getElementById("menu");
+                var top = document.getElementById("top");
+                if (menu.className === "menu") {
+                    menu.className += " responsive";
+                    top.className += " responsive";
+                }
+                else {
+                    menu.className = "menu";
+                    top.className = "top";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="top" id="top">
+            <!-- Secondary navigation bar -->
+            <div class="secondary-navigation">
+                <div style="min-width: 10px;"></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
+                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
+                    </ul>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            <!-- Navigation bar -->
+            <div class="header">
+                <div style="min-width: 10px;"></div>
+                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
+                <div></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger"> <!-- Hamburger menu -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                            <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            
+            <!-- Expandable menu -->
+            <div class="menu" id="menu">
+                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
+            </div>
+        </div>
+
+        <!-- Space under navigation bar -->
+        <div class="blank-space"></div>
+
+        <div class="faq">
+            <h1>Frequently Asked Questions (FAQs)</h1>
+
+            <h2>General Questions</h2>
+            <ul>
+                <li>
+                    <strong>What is the Appalachian Trail?</strong>
+                    <br>
+                    The Appalachian Trail is a long-distance hiking trail stretching across the eastern United States from Georgia to Maine.
+                </li>
+                <li>
+                    <strong>How long does it take to complete a thru-hike?</strong>
+                    <br>
+                    A typical thru-hike can take 5 to 7 months depending on pace and conditions.
+                </li>
+                <li>
+                    <strong>Do I need to be an experienced hiker?</strong>
+                    <br>
+                    Our tours are designed for both beginners and experienced hikers, with varying difficulty levels.
+                </li>
+            </ul>
+    
+            <h2>Booking and Payment</h2>
+            <ul>
+                <li>
+                    <strong>How do I book a tour?</strong>
+                    <br>
+                    You can book directly on our website by selecting your preferred tour and date, and completing the booking form.
+                </li>
+                <li>
+                    <strong>What payment methods do you accept?</strong>
+                    <br>
+                    We accept all major credit cards and PayPal.
+                </li>
+                <li>
+                    <strong>Is there a deposit required?</strong>
+                    <br>
+                    Yes, a 20% deposit is required to secure your booking.
+                </li>
+            </ul>
+    
+            <h2>Preparation and Gear</h2>
+            <ul>
+                <li>
+                    <strong>What gear do I need to bring?</strong>
+                    <br>
+                    We provide a full packing list after booking. Basic hiking gear such as boots, backpacks, and clothing are essential.
+                </li>
+                <li>
+                    <strong>Do you provide camping equipment?</strong>
+                    <br>
+                    Yes, we provide tents, cooking gear, and sleeping bags for overnight tours.
+                </li>
+                <li>
+                    <strong>How should I prepare for a hike?</strong>
+                    <br>
+                    We recommend conditioning with regular walks or hikes, increasing distance and elevation gradually before your tour.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-organizer">
+                <div style="flex-grow: 1">
+                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
+                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
+                </div>
+                
+                <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
+                <div>
+                    <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
+                    <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
+                    <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
+                    <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <p>&copy; Appalachian Adventures 2024</p>
+        </div>
+    </body>
+</html>

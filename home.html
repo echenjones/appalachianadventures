@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Experience the breathtaking beauty of the Appalachian Mountains with expertly guided hiking trips, designed for adventurers of all skill levels.">
+        <meta name="author" content="Elana Chen-Jones">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Appalachian Adventures | Home</title>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For hamburger and social media icons -->
+        <style type="text/css">
+            .banner-image {
+                position: relative;
+                margin: 0px;
+            }
+            .image-writing {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .image-writing h1 {
+                color: #E9DBD2;
+                text-align: center;
+                text-shadow: #FFFFFF 2px 1px;
+                font-size: calc(6vw + 6vh);
+            }
+            .content {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto;
+                column-gap: 20px;
+                row-gap: 10px;
+                justify-items: center;
+                align-items: center;
+                padding: 20px 150px 30px 150px;
+                max-width: 1300px;
+            }
+            .content h2 {
+                text-align: center;
+            }
+            .content-image {
+                border-radius: 10px;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                max-width: 100%;
+            }
+            #bottom.content-image {
+                display: none;
+            }
+            .more-link {
+                text-align: left;
+                text-decoration: none;
+                color: #D59622;
+            }
+            .more-link:visited {
+                text-decoration: none;
+                color: #D59622;
+            }
+
+            body {
+                background-color: #E9DBD2;
+            }
+            p {
+                text-align: justify;
+                margin-top: 10px;
+                line-height: 1.8;
+            }
+
+            @media (max-width: 1325px) {
+                .content {
+                    padding: 20px 100px 30px 100px;
+                }
+            }
+            @media (max-width: 1000px) {
+                .image-writing h1 {
+                    text-shadow: #FFFFFF 1px 1px;
+                    font-size: calc(5vw + 5vh);
+                }
+                .content {
+                    grid-template-columns: auto;
+                    grid-template-rows: auto auto auto auto auto auto;
+                }
+                .content-image {
+                    margin-top: 20px;
+                }
+                #left.content-image {
+                    display: none;
+                }
+                #bottom.content-image {
+                    display: block;
+                }
+
+                p {
+                    margin-top: 5px;
+                }
+            }
+            @media (max-width: 600px) {
+                .image-writing h1 {
+                    text-shadow: #FFFFFF 0.75px 0.75px;
+                    font-size: calc(4vw + 4vh);
+                }
+                .content {
+                    padding: 20px 50px 30px 50px;
+                }
+            }
+        </style>
+
+        <script>
+            function toggle() {
+                var menu = document.getElementById("menu");
+                var top = document.getElementById("top");
+                if (menu.className === "menu") {
+                    menu.className += " responsive";
+                    top.className += " responsive";
+                }
+                else {
+                    menu.className = "menu";
+                    top.className = "top";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="top" id="top">
+            <!-- Secondary navigation bar -->
+            <div class="secondary-navigation">
+                <div style="min-width: 10px;"></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
+                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
+                    </ul>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            <!-- Navigation bar -->
+            <div class="header">
+                <div style="min-width: 10px;"></div>
+                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
+                <div></div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
+                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger"> <!-- Hamburger menu -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                            <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div style="min-width: 10px"></div>
+            </div>
+            
+            <!-- Expandable menu -->
+            <div class="menu" id="menu">
+                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
+                <br>
+                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
+            </div>
+        </div>
+
+        <!-- Space under navigation bar -->
+        <div class="blank-space"></div>
+
+        <div class="banner-image">
+            <img src="mountains1.jpg" alt="Blue Ridge Mountains" width="100%">
+            <div class="image-writing">
+                <h1>Appalachian Adventures</h1>
+            </div>
+        </div>
+
+        <!-- Main content of homepage -->
+        <div class="content">
+            
+            <div>
+                <h2>About Us</h2>
+                <p>
+                    Appalachian Adventures is your gateway to exploring the stunning landscapes of the Appalachian Mountains through expertly guided 
+                    hiking tours. With a passion for the great outdoors, we offer a range of experiences tailored to all skill levels, from leisurely 
+                    day hikes that showcase incredible vistas, to immersive week-long treks that allow participants to camp under the stars. Our 
+                    knowledgeable guides share insights into the region’s rich flora, fauna, and history, ensuring every hike is both educational and 
+                    exhilarating. Whether you’re seeking a quick escape or an extended adventure, Appalachian Adventures promises unforgettable 
+                    journeys in one of America’s most beautiful natural playgrounds.
+                    &nbsp;
+                    <a class="more-link"href='https://emcgov.github.io/cs20-midterm/about.html'>Read more</a>
+                </p>
+            </div>
+                
+            <img class="content-image" src="hikers1.jpg" alt="Hikers" width="90%">
+            
+            <img class="content-image" id="left" src="hikers2.jpg" alt="Hikers" width="90%">
+
+            <div>
+                <h2>Upcoming Trips</h2>
+                <p>
+                    <strong>October 30, 2024:</strong>
+                    <br>
+                    Fall Foliage Day Hike - Explore vibrant autumn colors on a scenic trail in the White Mountains
+                    <br>
+                    <strong>November 5-10, 2024:</strong>
+                    <br>
+                    Canoeing and Camping Expedition - Paddle through tranquil waters while camping along the banks of the Gauley 
+                    River
+                    <br>
+                    <strong>November 12-14, 2024:</strong>
+                    <br>
+                    Weekend Backpacking Retreat - Immerse yourself in a two-day camping experience with stunning mountain views 
+                    in the Great Smoky Mountains
+                    <br>
+                    <strong>December 10, 2024:</strong>
+                    <br>
+                    Winter Wonderland Snowshoe Hike - Discover the beauty of the snowy landscape on a guided snowshoe trek through 
+                    Shenandoah National Park
+                </p>
+            </div>
+
+            <img class="content-image" id="bottom" src="hikers2.jpg" alt="Hikers" width="90%">
+
+            <div>
+                <h2>Our Tours</h2>
+                <p>
+                    Appalachian Adventures offers a variety of immersive outdoor experiences designed to connect adventurers with the breathtaking 
+                    beauty of the Appalachian Mountains. Our day hikes provide the perfect opportunity for those looking to explore scenic trails 
+                    and enjoy the natural landscape without an overnight commitment. For those seeking a deeper adventure, our week-long hikes 
+                    combine breathtaking trekking with camping under the stars, allowing participants to fully immerse themselves in nature. 
+                    Additionally, our canoeing and camping hikes blend the serenity of paddling with the thrill of camping, offering a unique way to 
+                    explore the region's waterways. Whether you're a seasoned hiker or a beginner, Appalachian Adventures has something for everyone.
+                    &nbsp;
+                    <a class="more-link"href='https://emcgov.github.io/cs20-midterm/tours.html'>Read more</a>
+                </p>
+            </div>
+                
+            <img class="content-image" src="mountains2.jpg" alt="Mountains" width="90%">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-organizer">
+                <div style="flex-grow: 1">
+                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
+                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
+                </div>
+                
+                <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
+                <div>
+                    <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
+                    <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
+                    <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
+                    <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <p>&copy; Appalachian Adventures 2024</p>
+        </div>
+    </body>
+<html>
