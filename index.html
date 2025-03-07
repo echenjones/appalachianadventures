@@ -108,75 +108,11 @@
             }
         </style>
 
-        <script>
-            function toggle() {
-                var menu = document.getElementById("menu");
-                var top = document.getElementById("top");
-                if (menu.className === "menu") {
-                    menu.className += " responsive";
-                    top.className += " responsive";
-                }
-                else {
-                    menu.className = "menu";
-                    top.className = "top";
-                }
-            }
-        </script>
+        <!-- Header -->
+        <script src="header.js"></script>
     </head>
 
     <body>
-        <div class="top" id="top">
-            <!-- Secondary navigation bar -->
-            <div class="secondary-navigation">
-                <div style="min-width: 10px;"></div>
-                <div class="navbar">
-                    <ul>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
-                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
-                    </ul>
-                </div>
-                <div style="min-width: 10px"></div>
-            </div>
-            <!-- Navigation bar -->
-            <div class="header">
-                <div style="min-width: 10px;"></div>
-                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
-                <div></div>
-                <div class="navbar">
-                    <ul>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
-                    </ul>
-                </div>
-                <div class="hamburger"> <!-- Hamburger menu -->
-                    <a href="javascript:void(0);" class="icon" onclick="toggle()">
-                            <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-                <div style="min-width: 10px"></div>
-            </div>
-            
-            <!-- Expandable menu -->
-            <div class="menu" id="menu">
-                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
-            </div>
-        </div>
-
-        <!-- Space under navigation bar -->
-        <div class="blank-space"></div>
-
         <div class="banner-image">
             <img src="mountains1.jpg" alt="Blue Ridge Mountains" width="100%">
             <div class="image-writing">
@@ -185,8 +121,7 @@
         </div>
 
         <!-- Main content of homepage -->
-        <div class="content">
-            
+        <div class="content"> 
             <div>
                 <h2>About Us</h2>
                 <p>
@@ -197,7 +132,7 @@
                     exhilarating. Whether you’re seeking a quick escape or an extended adventure, Appalachian Adventures promises unforgettable 
                     journeys in one of America’s most beautiful natural playgrounds.
                     &nbsp;
-                    <a class="more-link"href='https://emcgov.github.io/cs20-midterm/about.html'>Read more</a>
+                    <a class="more-link"href='https://echenjones.github.io/appalachianadventures/about.html'>Read more</a>
                 </p>
             </div>
                 
@@ -241,7 +176,7 @@
                     Additionally, our canoeing and camping hikes blend the serenity of paddling with the thrill of camping, offering a unique way to 
                     explore the region's waterways. Whether you're a seasoned hiker or a beginner, Appalachian Adventures has something for everyone.
                     &nbsp;
-                    <a class="more-link"href='https://emcgov.github.io/cs20-midterm/tours.html'>Read more</a>
+                    <a class="more-link"href='https://echenjones.github.io/appalachianadventures/tours.html'>Read more</a>
                 </p>
             </div>
                 
@@ -250,22 +185,6 @@
         </div>
 
         <!-- Footer -->
-        <div class="footer">
-            <div class="footer-organizer">
-                <div style="flex-grow: 1">
-                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
-                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
-                </div>
-                
-                <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
-                <div>
-                    <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
-                    <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
-                    <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
-                    <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
-                </div>
-            </div>
-            <p>&copy; Appalachian Adventures 2024</p>
-        </div>
+        <script src="footer.js"></script>
     </body>
 <html>
