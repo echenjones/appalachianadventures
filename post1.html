@@ -9,144 +9,82 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For hamburger and social media icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
-            <style type="text/css">
+        <style type="text/css">
+            .post {
+                padding: 20px 20% 20px 20%;
+                line-height: 1.6;
+            }
+            .post h1 {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                line-height: 1.2;
+            }
+            .post h1, .post h2 {
+                text-align: center;
+                color: #593B02;
+            }
+            .post h3 {
+                color: #47411F;
+                padding-top: 10px;
+            }
+            .post p, .post li {
+                color: #47411F;
+                padding-bottom: 30px;
+            }
+            .post ul {
+                list-style-type: disc;
+                margin-left: 20px;
+            }
+            .carousel {
+                width: 80%;
+                margin: 20px auto;
+            }
+            .carousel img {
+                width: 100%;
+                border-radius: 10px;
+            }
+            .slick-dots li button::before {
+                color: #E9DBD2;
+            }
+            .slick-dots li.slick-active button::before {
+                color: #E9DBD2;
+            }
+
+            body {
+                background-color: #E9DBD2;
+            }
+            p {
+                text-align: justify;
+            }
+
+            @media (max-width: 600px) {
                 .post {
-                    padding: 20px 20% 20px 20%;
-                    line-height: 1.6;
+                    padding: 20px 50px 20px 50px;
                 }
-                .post h1 {
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    line-height: 1.2;
-                }
-                .post h1, .post h2 {
-                    text-align: center;
-                    color: #593B02;
-                }
-                .post h3 {
-                    color: #47411F;
-                    padding-top: 10px;
-                }
-                .post p, .post li {
-                    color: #47411F;
-                    padding-bottom: 30px;
-                }
-                .post ul {
-                    list-style-type: disc;
-                    margin-left: 20px;
-                }
-                .carousel {
-                    width: 80%;
-                    margin: 20px auto;
-                }
-                .carousel img {
-                    width: 100%;
-                    border-radius: 10px;
-                }
-                .slick-dots li button::before {
-                    color: #E9DBD2;
-                }
-                .slick-dots li.slick-active button::before {
-                    color: #E9DBD2;
-                }
-
-                body {
-                    background-color: #E9DBD2;
-                }
-                p {
-                    text-align: justify;
-                }
-
-                @media (max-width: 600px) {
-                    .post {
-                        padding: 20px 50px 20px 50px;
-                    }
-                }
-            </style>
-        
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-            <script>
-                $(document).ready(function(){
-                    $('.carousel').slick({
-                        infinite: true,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        dots: true,
-                        arrows: false
-                    });
+            }
+        </style>
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.carousel').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    dots: true,
+                    arrows: false
                 });
-
-                function toggle() {
-                    var menu = document.getElementById("menu");
-                    var top = document.getElementById("top");
-                    if (menu.className === "menu") {
-                        menu.className += " responsive";
-                        top.className += " responsive";
-                    }
-                    else {
-                        menu.className = "menu";
-                        top.className = "top";
-                    }
-                }
+            });
         </script>
+
+        <!-- Header -->
+        <script src="header.js"></script>
     </head>
         
     <body>
-        <div class="top" id="top">
-            <!-- Secondary navigation bar -->
-            <div class="secondary-navigation">
-                <div style="min-width: 10px;"></div>
-                <div class="navbar">
-                    <ul>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
-                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
-                    </ul>
-                </div>
-                <div style="min-width: 10px"></div>
-            </div>
-            <!-- Navigation bar -->
-            <div class="header">
-                <div style="min-width: 10px;"></div>
-                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
-                <div></div>
-                <div class="navbar">
-                    <ul>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
-                    </ul>
-                </div>
-                <div class="hamburger"> <!-- Hamburger menu -->
-                    <a href="javascript:void(0);" class="icon" onclick="toggle()">
-                            <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-                <div style="min-width: 10px"></div>
-            </div>
-            
-            <!-- Expandable menu -->
-            <div class="menu" id="menu">
-                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
-                <br>
-                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
-            </div>
-        </div>
-
-        <!-- Space under navigation bar -->
-        <div class="blank-space"></div>
-
         <div class="post">
             <h1>Top 5 Scenic Spots on the Appalachian Trail</h1>
 
@@ -213,22 +151,6 @@
         </div>
 
         <!-- Footer -->
-        <div class="footer">
-            <div class="footer-organizer">
-                <div style="flex-grow: 1">
-                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
-                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
-                </div>
-
-                <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
-                <div>
-                    <a href='https://www.instagram.com/' class="fa fa-instagram"></a>
-                    <a href='https://www.facebook.com/' class="fa fa-facebook"></a>
-                    <a href='https://www.twitter.com/' class="fa fa-twitter"></a>
-                    <a href='https://www.youtube.com/' class="fa fa-youtube"></a>
-                </div>
-            </div>
-            <p>&copy; Appalachian Adventures 2024</p>
-        </div>
+        <script src="footer.js"></script>
     </body>
 </html>
