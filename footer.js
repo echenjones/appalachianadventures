@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="footer">
             <div class="footer-organizer">
                 <div style="flex-grow: 1">
-                    <h2><a href='https://emcgov.github.io/cs20-midterm/home.html'>Appalachian Adventures</a></h2>
-                    <a class="contact" href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact Us</a>
+                    <h2><a href='https://echenjones.github.io/appalachianadventures/'>Appalachian Adventures</a></h2>
+                    <a class="contact" href='https://echenjones.github.io/appalachianadventures/contact.html'>Contact Us</a>
                 </div>
 
                 <!-- Social media icons - on a real version, they would link to the actual social media pages of the organization -->
