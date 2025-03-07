@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li><a href='https://echenjones.github.io/appalachianadventures/about.html'>About</a></li>
                         <li><a href='https://echenjones.github.io/appalachianadventures/tours.html'>Tours</a></li>
                         <li><a href='https://echenjones.github.io/appalachianadventures/faq.html'>FAQ</a></li>
-                        <li><a href='https://echenjones.github.io/appalachianadventures/blog.html'>Blog</a></li>
+                        <li><a href='https://echenjones.github.io/appalachianadventures/blog'>Blog</a></li>
                     </ul>
                 </div>
                 <div class="hamburger"> <!-- Hamburger menu -->
