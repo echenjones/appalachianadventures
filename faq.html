@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appalachian Adventures | FAQ</title>
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For social media icons -->
+        <style>
+            body {
+                background-color: #E9DBD2;
+            }
+            .faq {
+                padding: 20px 20% 20px 20%;
+                text-align: justify;
+                line-height: 2;
+            }
+            .faq h1 {
+                padding-top: 20px;
+                padding-bottom: 30px;
+                text-align: center;
+                line-height: 1.2;
+            }
+            .faq h2 {
+                line-height: 1.2;
+            }
+            .faq-item {
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+            .faq-question {
+                font-size: 20px;
+                font-weight: bold;
+                color: #4C4C4C;
+                margin: 0;
+                transition: color 0.3s ease;
+            }
+            .faq-question:hover {
+                color: #47411F;
+            }
+            .faq-answer {
+                display: none;
+                margin-top: 10px;
+                color: #47411F;
+                font-size: 16px;
+                overflow: hidden;
+                transition: max-height 0.5s ease, opacity 0.5s ease;
+            }
+            .faq-answer.open {
+                display: block;
+                max-height: 200px; /* Adjust according to content length */
+                opacity: 1;
+            }
+            .faq-answer.closed {
+                max-height: 0;
+                opacity: 0;
+            }
+
+            @media (max-width: 600px) {
+                .faq {
+                    padding: 20px 50px 20px 50px;
+                    text-align: left;
+                }
+            }
+        </style>
+
+        <script>
+            function toggleAnswer(id) {
+              const answer = document.getElementById(id);
+        
+              if (answer.classList.contains('open')) {
+                answer.classList.remove('open');
+                answer.classList.add('closed');
+              } else {
+                answer.classList.remove('closed');
+                answer.classList.add('open');
+              }
+            }
+        </script>
+
+        <!-- Header -->
+        <script src="header.js"></script>
+    </head>
+
+    <body>
+       <div class="faq">
+            <h1>Frequently Asked Questions (FAQs)</h1>
+
+            <h2>General Questions</h2>
+            <div class="faq-item" onclick="toggleAnswer('faq1')">
+                <p class="faq-question">What is the Appalachian Trail?</p>
+                <p class="faq-answer closed" id="faq1">
+                    The Appalachian Trail is a long-distance hiking trail stretching across the eastern United States from Georgia to Maine.
+                </p>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer('faq2')">
+                <p class="faq-question">How long does it take to complete a thru-hike?</p>
+                <p class="faq-answer closed" id="faq2">
+                    A typical thru-hike can take 5 to 7 months depending on pace and conditions.
+                </p>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer('faq3')">
+                <p class="faq-question">Do I need to be an experienced hiker?</p>
+                <p class="faq-answer closed" id="faq3">
+                    Our tours are designed for both beginners and experienced hikers, with varying difficulty levels.
+                </p>
+            </div>
+    
+            <h2>Booking and Payment</h2>
+            <div class="faq-item" onclick="toggleAnswer('faq4')">
+                <p class="faq-question">How do I book a tour?</p>
+                <p class="faq-answer closed" id="faq4">
+                    You can book directly on our website by selecting your preferred tour and date, and completing the booking form.
+                </p>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer('faq5')">
+                <p class="faq-question">What payment methods do you accept?</p>
+                <p class="faq-answer closed" id="faq5">
+                    We accept all major credit cards and PayPal.
+                </p>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer('faq6')">
+                <p class="faq-question">Is there a deposit required?</p>
+                <p class="faq-answer closed" id="faq6">
+                    Yes, a 20% deposit is required to secure your booking.
+                </p>
+            </div>
+    
+            <h2>Preparation and Gear</h2>
+            <div class="faq-item" onclick="toggleAnswer('faq7')">
+                <p class="faq-question">What gear do I need to bring?</p>
+                <p class="faq-answer closed" id="faq7">
+                    We provide a full packing list after booking. Basic hiking gear such as boots, backpacks, and clothing are essential.
+                </p>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer('faq8')">
+                <p class="faq-question">Do you provide camping equipment?</p>
+                <p class="faq-answer closed" id="faq8">
+                    Yes, we provide tents, cooking gear, and sleeping bags for overnight tours.
+                </p>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer('faq9')">
+                <p class="faq-question">How should I prepare for a hike?</p>
+                <p class="faq-answer closed" id="faq9">
+                    We recommend conditioning with regular walks or hikes, increasing distance and elevation gradually before your tour.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <script src="footer.js"></script>
+    </body>
+</html>
