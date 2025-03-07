@@ -32,17 +32,17 @@
             .faq-question {
                 font-size: 20px;
                 font-weight: bold;
-                color: #47411F;
+                color: #595435;
                 margin: 0;
                 transition: color 0.3s ease;
             }
             .faq-question:hover {
-                color: #593B02;
+                color: #47411F;
             }
             .faq-answer {
                 display: none;
                 margin-top: 10px;
-                color: #47411F;
+                color: #595435;
                 font-size: 16px;
                 overflow: hidden;
                 transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -78,12 +78,12 @@
               }
             }
         </script>
+        
+        <!-- Header -->
+        <script src="header.js"></script>
     </head>
 
     <body>
-        <!-- Header -->
-        <script src="header.js"></script>
-        
         <div class="faq">
             <h1>Frequently Asked Questions (FAQs)</h1>
 
@@ -107,7 +107,7 @@
                 </p>
             </div>
     
-            <h2>Booking and Payment</h2>
+            <h2 style="margin-top: 20px">Booking and Payment</h2>
             <div class="faq-item" onclick="toggleAnswer('faq4')">
                 <p class="faq-question">How do I book a tour?</p>
                 <p class="faq-answer closed" id="faq4">
@@ -127,7 +127,7 @@
                 </p>
             </div>
     
-            <h2>Preparation and Gear</h2>
+            <h2 style="margin-top: 20px">Preparation and Gear</h2>
             <div class="faq-item" onclick="toggleAnswer('faq7')">
                 <p class="faq-question">What gear do I need to bring?</p>
                 <p class="faq-answer closed" id="faq7">
