@@ -1,4 +1,4 @@
-ocument.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     var header = document.createElement('header');
     header.innerHTML = `
         <div class="top" id="top">
