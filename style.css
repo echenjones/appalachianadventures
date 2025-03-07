@@ -6,7 +6,6 @@
     z-index: 100;
     width: 100%;
     padding: 0;
-    box-shadow: 0px 5px 40px 10px #AAAAAA;
 }
 .secondary-navigation {
     display: inline-grid;
