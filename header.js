@@ -7,8 +7,8 @@ ocument.addEventListener("DOMContentLoaded", function() {
                 <div style="min-width: 10px;"></div>
                 <div class="navbar">
                     <ul>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a></li>
-                        <li><strong><a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a></strong></li>
+                        <li><a href='https://echenjones.github.io/appalachianadventures/contact.html'>Contact</a></li>
+                        <li><strong><a href='https://echenjones.github.io/appalachianadventures/book.html'>Book a Tour</a></strong></li>
                     </ul>
                 </div>
                 <div style="min-width: 10px"></div>
@@ -16,14 +16,14 @@ ocument.addEventListener("DOMContentLoaded", function() {
             <!-- Navigation bar -->
             <div class="header">
                 <div style="min-width: 10px;"></div>
-                <a href="https://emcgov.github.io/cs20-midterm/home.html"><img src="logo.jpg" alt="Logo"></a>
+                <a href="https://echenjones.github.io/appalachianadventures/"><img src="logo.jpg" alt="Logo"></a>
                 <div></div>
                 <div class="navbar">
                     <ul>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a></li>
-                        <li><a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a></li>
+                        <li><a href='https://echenjones.github.io/appalachianadventures/about.html'>About</a></li>
+                        <li><a href='https://echenjones.github.io/appalachianadventures/tours.html'>Tours</a></li>
+                        <li><a href='https://echenjones.github.io/appalachianadventures/faq.html'>FAQ</a></li>
+                        <li><a href='https://echenjones.github.io/appalachianadventures/blog.html'>Blog</a></li>
                     </ul>
                 </div>
                 <div class="hamburger"> <!-- Hamburger menu -->
@@ -36,17 +36,17 @@ ocument.addEventListener("DOMContentLoaded", function() {
             
             <!-- Expandable menu -->
             <div class="menu" id="menu">
-                <a href='https://emcgov.github.io/cs20-midterm/about.html'>About</a>
+                <a href='https://echenjones.github.io/appalachianadventures/about.html'>About</a>
                 <br>
-                <a href='https://emcgov.github.io/cs20-midterm/tours.html'>Tours</a>
+                <a href='https://echenjones.github.io/appalachianadventures/tours.html'>Tours</a>
                 <br>
-                <a href='https://emcgov.github.io/cs20-midterm/faqs.html'>FAQ</a>
+                <a href='https://echenjones.github.io/appalachianadventures/faq.html'>FAQ</a>
                 <br>
-                <a href='https://emcgov.github.io/cs20-midterm/blog.html'>Blog</a>
+                <a href='https://echenjones.github.io/appalachianadventures/blog.html'>Blog</a>
                 <br>
-                <a href='https://emcgov.github.io/cs20-midterm/contact.html'>Contact</a>
+                <a href='https://echenjones.github.io/appalachianadventures/contact.html'>Contact</a>
                 <br>
-                <a href='https://emcgov.github.io/cs20-midterm/book.html'>Book a Tour</a>
+                <a href='https://echenjones.github.io/appalachianadventures/book.html'>Book a Tour</a>
             </div>
         </div>
 
