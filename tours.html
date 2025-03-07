@@ -107,37 +107,16 @@
             document.getElementById("day").innerHTML += '<div>' + 
                 '<h2>' + tours[0].Name + '</h2>' + 
                 '<div class="description">' + tours[0].Description + '</div>';
-            tours[0].includes.forEach(writeDay);
-            document.getElementById("day").innerHTML += '</ul>' + '</div>';
-
-            // called to write the Included information
-            function writeDay(item) {
-                document.getElementById("day").innerHTML += '<li>' + item + '</li>';
-            }
 
             //putting Week-Long Hike and Camping into html
             document.getElementById("week").innerHTML += '<div>' + 
                 '<h2>' + tours[1].Name + '</h2>' + 
                 '<div class="description">' + tours[1].Description + '</div>';
-            tours[1].includes.forEach(writeWeek);
-            document.getElementById("week").innerHTML += '</ul>' + '</div>';
-
-            // called to write the Included information
-            function writeWeek(item) {
-                document.getElementById("week").innerHTML += '<li>' + item + '</li>';
-            }
 
             //putting Canoe and Camp Hike into html
             document.getElementById("canoe").innerHTML += '<div>' + 
                 '<h2>' + tours[2].Name + '</h2>' + 
                 '<div class="description">' + tours[2].Description + '</div>';
-            tours[2].includes.forEach(writeCanoe);
-            document.getElementById("canoe").innerHTML += '</ul>' + '</div>';
-
-            // called to write the Included information
-            function writeCanoe(item) {
-                document.getElementById("canoe").innerHTML += '<li>' + item + '</li>';
-            }
 
         </script>
 
