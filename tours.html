@@ -91,49 +91,22 @@
             const tours = [
                 {
                     'Name' : 'Day Hikes',
-                    'Description' : 'Want a quick getaway from your busy schedule? Then our day hikes are perfect for you! Take a guided excursion with us through the breathtaking scenes and views of the Appalachian trails. You will get to learn all about the natural wildlife by our experienced guides. Each hike is carefully mapped out to provide a wonderful experience in just a few hours, no matter your skill level.',
-                    'Level' : 'All Skill Levels',
-                    'Duration' : '2-10 hour hikes',
-                    'includes' : [
-                        'Guided tour',
-                        'Food and drinks for the longer day hikes',
-                        'Beautiful scenery'
-                    ]
+                    'Description' : 'Want a quick getaway from your busy schedule? Then our day hikes are perfect for you! Take a guided excursion with us through the breathtaking scenes and views of the Appalachian trails. You will get to learn all about the natural wildlife by our experienced guides. Each hike is carefully mapped out to provide a wonderful experience in just a few hours, no matter your skill level.'
                 },
                 {
                     'Name' : 'Week-Long Hike and Camping',
-                    'Description' : 'Are you a more experienced hiker, and want a more immersive experience? This is for you! These multi-day expeditions are perfect for someone wanting to get away from the craziness of everyday life and experience the beauty in the world. Each night, we set up camp at picturesque locations and cook delicious meals over the fire. You will leave with unforgettable memories and newfound wilderness skills.',
-                    'Level' : 'Intermediate to Advanced Hikers',
-                    'Duration' : '7 days',
-                    'includes' : [
-                        'Guided tour',
-                        'Food and drinks for all meals',
-                        'Hiking equipment (let us know if you need some before we go)',
-                        'Beautiful scenery'
-                    ]
+                    'Description' : 'Are you a more experienced hiker, and want a more immersive experience? This is for you! These multi-day expeditions are perfect for someone wanting to get away from the craziness of everyday life and experience the beauty in the world. Each night, we set up camp at picturesque locations and cook delicious meals over the fire. You will leave with unforgettable memories and newfound wilderness skills.'
                 },
                 {
                     'Name' : 'Canoe and Camp Hike',
-                    'Description' : 'For those seeking a unique and exhilarating journey, our Canoe and Camp Hike offers the best of both worlds. Spend your days paddling through rivers and lakes and hiking trails to views you can not get anywhere else. Each evening, we set up camp by the water, where you can unwind with the soothing sounds of the wilderness around you. This tour is designed for those who love both water and land, giving you a fresh new experience you will remember forever.',
-                    'Level' : 'Intermediate to Advanced Hikers and Canoers',
-                    'Duration' : '4-7 days',
-                    'includes' : [
-                        'Guided tour',
-                        'Food and drinks for all meals',
-                        'Hiking equipment (let us know if you need some before we go)',
-                        'Canoeing equipment',
-                        'Beautiful scenery'
-                    ]
+                    'Description' : 'For those seeking a unique and exhilarating journey, our Canoe and Camp Hike offers the best of both worlds. Spend your days paddling through rivers and lakes and hiking trails to views you can not get anywhere else. Each evening, we set up camp by the water, where you can unwind with the soothing sounds of the wilderness around you. This tour is designed for those who love both water and land, giving you a fresh new experience you will remember forever.'
                 }
             ]
 
             //putting Day Hikes into html
             document.getElementById("day").innerHTML += '<div>' + 
                 '<h2>' + tours[0].Name + '</h2>' + 
-                '<div class="description">' + tours[0].Description + '</div>' + '<ul>' + 
-                '<li>' + "Level: "+ tours[0].Level + '</li>' + 
-                '<li>' + "Duration: "+ tours[0].Duration + '</li>' + '</ul>' + "Includes:" +
-                '<ul">';
+                '<div class="description">' + tours[0].Description + '</div>';
             tours[0].includes.forEach(writeDay);
             document.getElementById("day").innerHTML += '</ul>' + '</div>';
 
@@ -145,10 +118,7 @@
             //putting Week-Long Hike and Camping into html
             document.getElementById("week").innerHTML += '<div>' + 
                 '<h2>' + tours[1].Name + '</h2>' + 
-                '<div class="description">' + tours[1].Description + '</div>' + '<ul>' + 
-                '<li>' + "Level: "+ tours[1].Level + '</li>' + 
-                '<li>' + "Duration: "+ tours[1].Duration + '</li>' + '</ul>' + "Includes:" +
-                '<ul">';
+                '<div class="description">' + tours[1].Description + '</div>';
             tours[1].includes.forEach(writeWeek);
             document.getElementById("week").innerHTML += '</ul>' + '</div>';
 
@@ -160,10 +130,7 @@
             //putting Canoe and Camp Hike into html
             document.getElementById("canoe").innerHTML += '<div>' + 
                 '<h2>' + tours[2].Name + '</h2>' + 
-                '<div class="description">' + tours[2].Description + '</div>' + '<ul>' + 
-                '<li>' + "Level: "+ tours[2].Level + '</li>' + 
-                '<li>' + "Duration: "+ tours[2].Duration + '</li>' + '</ul>' + "Includes:" +
-                '<ul">';
+                '<div class="description">' + tours[2].Description + '</div>';
             tours[2].includes.forEach(writeCanoe);
             document.getElementById("canoe").innerHTML += '</ul>' + '</div>';
 
